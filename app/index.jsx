@@ -1,25 +1,31 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, Image } from "react-native";
+import Logo from '../assets/books.jpg'
+import React from "react";
 
 const Home = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>The Best</Text>
-      <Text>Reading List App</Text>
-    </View>
-  )
-}
 
-export default Home
+      <Text style={{ marginTop: 8, marginBottom: 25 }}>Reading List App</Text>
+      <Image source={Logo} style={styles.image}/>
+    </View>
+  );
+};
+
+export default Home;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
-    fontWeight: 'bold',
-    fontSize: 18
+    fontWeight: "bold",
+    fontSize: 18,
+  },
+  image: {
+    marginVertical: 20,
   }
-})
+});
