@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text>The Best</Text>
+      <Text style={styles.title}>The Best</Text>
       <Text>Reading List App</Text>
     </View>
   )
@@ -17,5 +17,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 18
   }
 })
