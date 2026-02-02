@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import Logo from '../assets/books.jpg'
+import { Link } from "expo-router";
 import React from "react";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 
       <Text style={{ marginTop: 8, marginBottom: 25 }}>Reading List App</Text>
       <Image source={Logo} style={styles.image}/>
+      <Link href="/about">About Page</Link>
     </View>
   );
 };
