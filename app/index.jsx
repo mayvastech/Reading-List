@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image } from "react-native";
-import Logo from '../assets/books.jpg'
+import Logo from "../assets/books.jpg";
 import { Link } from "expo-router";
 import React from "react";
 
@@ -9,8 +9,9 @@ const Home = () => {
       <Text style={styles.title}>The Best</Text>
 
       <Text style={{ marginTop: 8, marginBottom: 25 }}>Reading List App</Text>
-      <Image source={Logo} style={styles.image}/>
-      <Link href="/about">About Page</Link>
+      <Image source={Logo} style={styles.image} />
+      <Link href="/about" style={styles.link}>About Page</Link>
+      <Link href="/contact" style={styles.link}>Contact Page</Link>
     </View>
   );
 };
@@ -29,5 +30,9 @@ const styles = StyleSheet.create({
   },
   image: {
     marginVertical: 20,
-  }
+  },
+  link: {
+    marginVertical: 10,
+    borderBottomWidth: 1,
+  },
 });
