@@ -6,7 +6,7 @@ import React from "react";
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>The Best</Text>
+      <Text style={styles.title}>Shelfie</Text>
 
       <Text style={{ marginTop: 8, marginBottom: 25 }}>Reading List App</Text>
       <Image source={Logo} style={styles.image} />
