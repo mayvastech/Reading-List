@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
+import { colours } from "../constants/colours";
 import React from 'react'
 import { Link } from 'expo-router'
 

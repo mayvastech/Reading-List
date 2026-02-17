@@ -6,12 +6,13 @@ import { Stack } from "expo-router";
 const RootLayout = () => {
   const colourscheme = useColorScheme();
   // useColorScheme hook returns device colour scheme, either "light" or "dark" string
-  console.log(colourscheme);
+  const theme = colours[colourscheme] ?? colours.light;
+  // theme references light or dark in colours object. if null use lightI
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: "#ddd" },
-        headerTintColor: "#333",
+        headerStyle: { backgroundColor: theme.navBackground },
+        headerTintColor: theme.title,
       }}
     >
       <Stack.Screen name="index" options={{ title: "Home" }} />
